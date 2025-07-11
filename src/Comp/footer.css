@@ -1,0 +1,150 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+.footer {
+  width: 100%;
+  padding: 30px 40px;
+  background-color: #d9d9d9;
+}
+.footer .container {
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.footer .container .about {
+  max-width: 30%;
+}
+.footer .container .about .logo img {
+  width: 100%;
+}
+.footer .container .about .details p {
+  font-size: 16px;
+  margin-top: 20px;
+  color: gray;
+  font-weight: bold;
+}
+.footer .container .about .icons {
+  margin-top: 20px;
+  display: flex;
+}
+.footer .container .about .icons li {
+  list-style: none;
+  margin-left: 20px;
+  padding: 10px 10px;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  transition: 0.3s;
+  border-radius: 5px;
+}
+.footer .container .about .icons li:hover {
+  background-color: #0989ff;
+  color: #fff;
+}
+.footer .container .account {
+  margin-right: 100px;
+  margin-top: 30px;
+}
+.footer .container .account h3 {
+  font-size: 32px;
+  color: #010f1c;
+}
+.footer .container .account ul {
+  margin-top: 10px;
+  margin-left: 20px;
+}
+.footer .container .account ul li {
+  margin-top: 5px;
+  color: #010f1c;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.footer .container .account ul li:hover {
+  color: #0989ff;
+}
+.footer .container .page {
+  margin-right: 100px;
+  margin-top: 30px;
+}
+.footer .container .page h3 {
+  font-size: 32px;
+  color: #010f1c;
+}
+.footer .container .page ul {
+  margin-top: 10px;
+  margin-left: 20px;
+}
+.footer .container .page ul li {
+  margin-top: 5px;
+  color: #010f1c;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.footer .container .page ul li:hover {
+  color: #0989ff;
+}
+.footer .end {
+  text-align: center;
+  background-color: #ccc;
+  padding: 15px 10px;
+  color: gray;
+  font-size: 14px;
+  font-weight: bold;
+}
+/* Start Media Screen */
+@media (max-width: 991.98px) {
+  .footer {
+    padding: 24px;
+  }
+  .footer .container {
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
+    text-align: center;
+  }
+  .footer .container .about {
+    max-width: 100%;
+  }
+  .footer .container .account,
+  .footer .container .page {
+    margin: 0;
+  }
+}
+@media (max-width: 767.98px) {
+  .footer .container .about .details p {
+    font-size: 14px;
+  }
+  .footer .container .about .icons li {
+    margin-left: 12px;
+    padding: 8px;
+  }
+  .footer .container .account h3,
+  .footer .container .page h3 {
+    font-size: 24px;
+  }
+}
+@media (max-width: 575.98px) {
+  .footer {
+    padding: 20px;
+  }
+  .footer .container .about .logo img {
+    width: 140px;
+  }
+  .footer .container .about .icons {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+  .footer .end {
+    font-size: 12px;
+  }
+}
+@media (min-width: 1200px) {
+  .footer {
+    padding: 40px 60px;
+  }
+}
